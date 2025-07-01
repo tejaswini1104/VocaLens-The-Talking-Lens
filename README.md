@@ -1,31 +1,30 @@
 # 🧠 Vocalens: The Talking Lens
 
-"Vocalens" is an AI-powered desktop application that combines real-time object detection with voice-based interaction. Built with Python, OpenCV, YOLOv8, and Tkinter, it provides visual and auditory feedback about detected objects and answers user queries using Wikipedia.
+Vocalens is an AI-powered assistant that combines real-time object detection with voice-based interaction. Built with Python, OpenCV, YOLOv8, and Tkinter, it provides visual and voice-based feedback about detected objects and answers user questions by performing an internet search.
 
- ✨ Features:
+✨ Features:
 - 🎥 Real-time webcam object detection using YOLOv8.
-- 🔊 Voice output via Text-to-Speech (TTS) using `pyttsx3`.
-- 🎤 Speech recognition to understand user queries.
-- 🌐 Wikipedia integration to fetch answers about detected objects.
-- 🖥️ Fullscreen desktop GUI built with Tkinter in a dark-themed layout.
-- ✅ Option to toggle voice output on/off.
-- 💬 User input for optional custom text-to-speech.
+- 🔊 Voice output using Text-to-Speech (`pyttsx3`).
+- 🎤 Voice recognition to understand user questions.
+- 🌐 Online search to answer questions about detected objects.
+- 🖥️ Fullscreen Tkinter-based graphical interface with dark theme.
+- ✅ Toggleable voice output.
+- 💬 User text input for speaking custom messages.
 
- 🧰 Tech Stack:
+🧰 Tech Stack:
 - Python
 - OpenCV
 - YOLOv8 (`ultralytics`)
 - pyttsx3 (TTS)
 - speech_recognition
-- Wikipedia API
-- Tkinter (GUI)
+- Internet Search (custom function)
+- Tkinter
 - PIL (Image handling)
 
-
 🚀 How It Works:
-1. The app opens in fullscreen with webcam feed on the right.
-2. Click **Start Detection** to capture and detect objects in view.
-3. Detected object names are spoken (if enabled) and displayed.
-4. The app listens for voice questions about the detected object.
-5. Wikipedia is queried to give back answers which are shown and optionally spoken.
+1. The GUI launches in fullscreen mode with live webcam feed.
+2. Press **Start Detection** to identify objects in the camera view.
+3. The app announces the detected object (if voice is enabled).
+4. It listens for a follow-up question about the object.
+5. Using an internet search, it fetches and reads a relevant answer.
 
